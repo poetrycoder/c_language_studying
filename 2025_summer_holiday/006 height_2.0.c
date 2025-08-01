@@ -21,6 +21,8 @@
 
 
 //第2种思路如下：
+//用double数据类型
+//double类型特点：printf里用%f,scanf里用%lf 
  
 #include <stdio.h>
 int main()
@@ -34,7 +36,7 @@ int main()
 	
 	scanf("%lf %lf", &foot, &inch);     //%lf代表双精度浮点数，与double对应; 如果是float单精度浮点数类型的话，用%f 
 	
-	printf("身高是%f米。\n", 
+	printf("身高是%f米。\n",          //double类型特点：printf里用%f,scanf里用%lf 
 	    (foot + inch / 12) * 0.3048);
 	    
 	return 0;
