@@ -11,5 +11,5 @@ int main()
 	printf("%d和%d的平均值为：\n%f \n",a, b, c);
 	
 	return 0;
-	
+	 
 }
