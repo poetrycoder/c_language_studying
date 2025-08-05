@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+	int hour1, minute1;
+	int hour2, minute2;
+	
+	printf("请输入时间1的小时数和分钟数：\n");
+	scanf("%d %d", &hour1, &minute1);
+	
+	printf("请输入时间2的小时数和分钟数：\n");
+	scanf("%d %d", &hour2, &minute2);
+	
+	int ih = hour2 - hour1;
+	int im = minute2 - minute1;
+	
+	if (im<0) {
+		im = 60 + im;
+		ih --;
+	}
+	
+	printf("时间差是%d小时%d分。\n", ih,im);
+
+	return 0;
+}
