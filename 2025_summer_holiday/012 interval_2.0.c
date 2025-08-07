@@ -15,7 +15,7 @@ int main()
 	
 	if (im<0) {
 		im = 60 + im;
-		ih --;
+		ih--;
 	}
 	
 	printf("时间差是%d小时%d分。\n", ih,im);
