@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 int main()
 {
@@ -6,20 +7,22 @@ int main()
 	printf("请输入三个整数：\n");
 	scanf("%d %d %d", &a, &b, &c);
 	int max = 0;
-	if(a>b)
+	if(a>b){
 		if(a>c)
 			max = a;
 		else
 			max = c;
-	else
+	}
+	else{
 		if(b>c)
 			max = b;
 		else
 			max = c;
+	}
 	printf("The max is %d\n", max);
 	
 	return 0;
-	
+
 }
 	
 
